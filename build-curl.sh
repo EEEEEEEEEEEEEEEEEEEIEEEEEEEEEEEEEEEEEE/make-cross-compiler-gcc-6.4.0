@@ -1,6 +1,5 @@
-export CPPFLAGS=-I/opt/cross/arm-linux-gnueabi/include/openssl
-export LDFLAGS=-L/opt/cross/arm-linux-gnueabi/lib
+export CPPFLAGS=-I/opt/arm/arm-linux-gnueabihf/include/openssl
+export LDFLAGS=-L/opt/arm/arm-linux-gnueabihf/lib
 export LIBS="-lssl -lcrypto"
 
-./configure --with-ssl --with-zlib --host=arm-linux-gnueabi --prefix=/opt/cross/arm-linux-gnueabi
-
+./configure --enable-static --disable-shared LDFLAGS="-static" --with-ssl --with-zlib --host=arm-linux-gnueabihf --prefix=/opt/arm/arm-linux-gnueabihf
