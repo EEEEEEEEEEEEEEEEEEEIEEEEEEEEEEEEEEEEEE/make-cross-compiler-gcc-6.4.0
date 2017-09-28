@@ -38,7 +38,7 @@ done
 # 1. Binutils
 mkdir -pv binutils-build
 cd binutils-build
-../binutils-$BINUTILS_VERSION/configure --prefix=$CROSS --target=$TARGET --disable-multilib
+../binutils-$BINUTILS_VERSION/configure --prefix=$CROSS --target=$TARGET --disable-multilib --disable-nls
 make -j8
 make install
 cd ..
