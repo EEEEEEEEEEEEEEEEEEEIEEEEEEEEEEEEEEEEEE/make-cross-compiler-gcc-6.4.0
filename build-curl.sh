@@ -1,4 +1,4 @@
-export CPPFLAGS=-I/opt/arm/arm-linux-gnueabihf/include/openssl
+export CPPFLAGS=-I/opt/arm/arm-linux-gnueabihf/include
 export LDFLAGS=-L/opt/arm/arm-linux-gnueabihf/lib
 export LIBS="-lssl -lcrypto"
 
